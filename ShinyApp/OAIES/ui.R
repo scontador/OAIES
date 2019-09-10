@@ -12,12 +12,15 @@ ui <- tagList(
         
         dashboardPage(
                 
+                skin = "purple",
                 
                 dashboardHeader(
                         
                         title = "OAIES"
                         
                 ),
+                
+                
                 
                 
                 dashboardSidebar(
@@ -37,6 +40,7 @@ ui <- tagList(
                 
                 
                 dashboardBody(
+                        
                         
                         fluidRow(
                                 
@@ -70,9 +74,10 @@ ui <- tagList(
                                                 column(
                                                         
                                                         11,
-                                                        h5("Esta aplicación recolecta las direcciones web de más de 1100 proveedores españoles de datos y/o servicios que utilizan el protocolo de comunicación OAI-PMH."), 
+                                                        h5("Esta aplicación recolecta las direcciones web de más de 1100 proveedores españoles de datos y/o servicios que utilizan el protocolo de comunicación OAI-PMH (Open Access Initiative - Protocol for Metadata Harvesting)."), 
                                                         h5("Para más información dirigasé a:"), 
-                                                        h5(tags$a(href = as.character("https://github.com/scontador/OAIES"), target = "_blank", as.character("GitHub")))
+                                                        h5(tags$a(href = as.character("http://rpubs.com/scontador/OAIES"), target = "_blank", as.character("Presentación"))),
+                                                        h5(tags$a(href = as.character("https://github.com/scontador"), target = "_blank", as.character("GitHub")))
                                                 )
                                                 
                                         )

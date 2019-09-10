@@ -49,6 +49,7 @@ server <- function(input, output, session) {
                 
                 option <- list( projection = "kavrayskiy-vii")
                 
+                country <- frame2$Country
                 number.documet <- rep(1, length(frame2$Country))
                 WorldCountries <- data.frame(Country = country, NumberDocs = number.documet)
                 
