@@ -11,10 +11,10 @@ css: custom.css
 
 
 
-
 <div align="center">
 <img src="imagen/search.png" width=300 height=200>
 </div>
+
 
 Introducción
 ========================================================
@@ -22,7 +22,6 @@ transition: rotate
 type: photo
 
 Esta aplicación recolecta las direcciones web de más de 1100 proveedores españoles de datos y/o servicios que utilizan el protocolo de comunicación OAI-PMH (Open Access Initiative - Protocol for Metadata Harvesting).
-
 
 
 Secciones
@@ -56,6 +55,7 @@ Sitios centralizados donde se almacena y mantiene la información digitalizada.
 La información se distribuye a través de una red informática que se comunica con diferentes protocolos de interoperatibilidad.
 
 Uno de los principales protocolos es OAI-PMH.
+
 
 OAI-PMH
 ========================================================
@@ -129,8 +129,6 @@ transition: concave
 type: photo
 
 La aplicación muestra información a cerca de los proveedores españoles. En concreto, el usuario puede visualizar cinco características de cada repositorio:
-
-
 
 <table>
  <thead>

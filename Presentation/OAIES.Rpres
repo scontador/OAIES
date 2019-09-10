@@ -8,8 +8,6 @@ font-family: 'Risque'
 css: custom.css
 
 
-
-
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(knitr)
@@ -20,9 +18,11 @@ library(png)
 library(pander)
 ```
 
+
 <div align="center">
 <img src="imagen/search.png" width=300 height=200>
 </div>
+
 
 Introducción
 ========================================================
@@ -30,7 +30,6 @@ transition: rotate
 type: photo
 
 Esta aplicación recolecta las direcciones web de más de 1100 proveedores españoles de datos y/o servicios que utilizan el protocolo de comunicación OAI-PMH (Open Access Initiative - Protocol for Metadata Harvesting).
-
 
 
 Secciones
@@ -64,6 +63,7 @@ Sitios centralizados donde se almacena y mantiene la información digitalizada.
 La información se distribuye a través de una red informática que se comunica con diferentes protocolos de interoperatibilidad.
 
 Uno de los principales protocolos es OAI-PMH.
+
 
 OAI-PMH
 ========================================================
@@ -137,8 +137,6 @@ transition: concave
 type: photo
 
 La aplicación muestra información a cerca de los proveedores españoles. En concreto, el usuario puede visualizar cinco características de cada repositorio:
-
-
 
 ```{r tab1, echo = FALSE, kable = TRUE, tab.pos='H'}
 frame <- data.frame(matrix(nrow = 5, ncol = 2))
