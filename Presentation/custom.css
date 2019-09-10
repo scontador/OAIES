@@ -1,0 +1,26 @@
+
+.section .reveal .state-background {
+      background: black;
+}
+
+.photo .reveal .state-background {
+      background: linear-gradient(to bottom, transparent 0%, white 85%),  linear-gradient(to top, transparent 0%, white 85%),
+      url('https://invisu.inha.fr/_resources-images/logos/logo_oai-pmh_0x1600.jpg');
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+
+.last .reveal .state-background {
+      background: lightblue;
+}
+
+.btn.disabled {
+    background-color: red;
+}
+
+.reveal .slides section .slideContent{
+    font-size: 20pt;
+}
+
