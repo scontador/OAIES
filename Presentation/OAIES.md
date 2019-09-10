@@ -13,7 +13,7 @@ css: custom.css
 
 
 <div align="center">
-<img src="imagen/buscador.png" width=300 height=200>
+<img src="imagen/search.png" width=300 height=200>
 </div>
 
 Introducción

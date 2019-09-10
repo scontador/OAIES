@@ -1,3 +1,6 @@
+###############################################################################
+# MAIN APPLICATION
+###############################################################################
 
 
 # Libraries required
@@ -5,8 +8,7 @@ library(shiny)
 library(shinyjs)
 library(shinythemes)
 library(shinydashboard)
-suppressPackageStartupMessages(library(googleVis)) # for plot-1, plot-2
-
+suppressPackageStartupMessages(library(googleVis))
 
 
 # Load directory 
@@ -16,9 +18,3 @@ dir <- paste(getwd(), "/R/Programas/Shiny/OAIES/OAIES", sep = "")
 
 # Lunch app
 runApp(dir)
-
-
-
-
-
-

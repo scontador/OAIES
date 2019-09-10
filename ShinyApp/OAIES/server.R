@@ -1,22 +1,25 @@
+###############################################################################
+# SERVER
+###############################################################################
+
 
 # Libraries required
 library(shiny)
 library(shinyjs)
 library(shinythemes)
 library(shinydashboard)
-suppressPackageStartupMessages(library(googleVis)) # for plot-1, plot-2
-
-
+suppressPackageStartupMessages(library(googleVis))
 
 
 # load data
-dir <- paste(getwd(), "/data/repository.csv", sep = "") 
+dir <- paste(getwd(), "/data/repositories.csv", sep = "") 
 frame <- read.csv(dir)
 
 dir <- paste(getwd(), "/data/countries.csv", sep = "") 
 frame2 <- read.csv(dir)
 
 
+# Main Server
 server <- function(input, output, session) {
         
         output$table <- renderDataTable(
@@ -48,15 +51,12 @@ server <- function(input, output, session) {
         output$plot <- renderGvis({
                 
                 option <- list( projection = "kavrayskiy-vii")
-                
                 country <- frame2$Country
                 number.documet <- rep(1, length(frame2$Country))
                 WorldCountries <- data.frame(Country = country, NumberDocs = number.documet)
-                
                 gvisGeoChart(WorldCountries, locationvar = "Country", options = option)
                 
         })
         
 }
-
 

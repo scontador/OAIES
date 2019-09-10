@@ -1,13 +1,17 @@
+###############################################################################
+# USER INTERFACE
+###############################################################################
+
 
 # Libraries required
 library(shiny)
 library(shinyjs)
 library(shinythemes)
 library(shinydashboard)
-suppressPackageStartupMessages(library(googleVis)) # for plot-1, plot-2
+suppressPackageStartupMessages(library(googleVis))
 
 
-
+# Main Dashboard
 ui <- tagList(
         
         dashboardPage(
@@ -19,9 +23,6 @@ ui <- tagList(
                         title = "OAIES"
                         
                 ),
-                
-                
-                
                 
                 dashboardSidebar(
                         
@@ -38,9 +39,7 @@ ui <- tagList(
                         
                 ),
                 
-                
                 dashboardBody(
-                        
                         
                         fluidRow(
                                 
@@ -246,7 +245,5 @@ ui <- tagList(
         )
         
 )
-        
-        
-        
+
         
